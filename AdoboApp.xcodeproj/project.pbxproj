@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		528C59B01B5631FF00AA18A1 /* PJRSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C59AF1B5631FF00AA18A1 /* PJRSignatureView.m */; };
+		52E9A2061B5505EB00033B32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A2051B5505EB00033B32 /* main.m */; };
+		52E9A2091B5505EB00033B32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A2081B5505EB00033B32 /* AppDelegate.m */; };
+		52E9A2111B5505EB00033B32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E9A2101B5505EB00033B32 /* Images.xcassets */; };
+		52E9A2141B5505EB00033B32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E9A2121B5505EB00033B32 /* LaunchScreen.xib */; };
+		52E9A2201B5505EB00033B32 /* AdoboAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A21F1B5505EB00033B32 /* AdoboAppTests.m */; };
+		52E9A2351B5506C100033B32 /* adobo-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E9A2311B5506C100033B32 /* adobo-background.png */; };
+		52E9A2361B5506C100033B32 /* adobo-pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E9A2321B5506C100033B32 /* adobo-pen.png */; };
+		52E9A2371B5506C100033B32 /* Mohave-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52E9A2331B5506C100033B32 /* Mohave-Bold.otf */; };
+		52E9A2381B5506C100033B32 /* adobo-logo in Resources */ = {isa = PBXBuildFile; fileRef = 52E9A2341B5506C100033B32 /* adobo-logo */; };
+		52E9A23C1B5506F800033B32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A23A1B5506F800033B32 /* ViewController.m */; };
+		52E9A23D1B5506F800033B32 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E9A23B1B5506F800033B32 /* ViewController.xib */; };
+		87B7225A94AA8A81A1E7E844 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E65F48A3540B5E5AB060098E /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52E9A21A1B5505EB00033B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E9A1F81B5505EB00033B32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E9A1FF1B5505EB00033B32;
+			remoteInfo = AdoboApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		528C59AE1B5631FF00AA18A1 /* PJRSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRSignatureView.h; sourceTree = "<group>"; };
+		528C59AF1B5631FF00AA18A1 /* PJRSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRSignatureView.m; sourceTree = "<group>"; };
+		52E9A2001B5505EB00033B32 /* AdoboApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoboApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E9A2041B5505EB00033B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E9A2051B5505EB00033B32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52E9A2071B5505EB00033B32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52E9A2081B5505EB00033B32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52E9A2101B5505EB00033B32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52E9A2131B5505EB00033B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		52E9A2191B5505EB00033B32 /* AdoboAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdoboAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E9A21E1B5505EB00033B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E9A21F1B5505EB00033B32 /* AdoboAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdoboAppTests.m; sourceTree = "<group>"; };
+		52E9A2311B5506C100033B32 /* adobo-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adobo-background.png"; sourceTree = "<group>"; };
+		52E9A2321B5506C100033B32 /* adobo-pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adobo-pen.png"; sourceTree = "<group>"; };
+		52E9A2331B5506C100033B32 /* Mohave-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohave-Bold.otf"; sourceTree = "<group>"; };
+		52E9A2341B5506C100033B32 /* adobo-logo */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adobo-logo"; sourceTree = "<group>"; };
+		52E9A2391B5506F800033B32 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52E9A23A1B5506F800033B32 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52E9A23B1B5506F800033B32 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		821D0CAFFAF14CD6356C7C14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B175BEE4861DF6EC8B41C805 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E65F48A3540B5E5AB060098E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52E9A1FD1B5505EB00033B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B7225A94AA8A81A1E7E844 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E9A2161B5505EB00033B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30E5AC618C109C3B36FFE641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B175BEE4861DF6EC8B41C805 /* Pods.debug.xcconfig */,
+				821D0CAFFAF14CD6356C7C14 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52E9A1F71B5505EB00033B32 = {
+			isa = PBXGroup;
+			children = (
+				52E9A2021B5505EB00033B32 /* AdoboApp */,
+				52E9A21C1B5505EB00033B32 /* AdoboAppTests */,
+				52E9A2011B5505EB00033B32 /* Products */,
+				30E5AC618C109C3B36FFE641 /* Pods */,
+				913F2F511FE51D433524FCE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52E9A2011B5505EB00033B32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E9A2001B5505EB00033B32 /* AdoboApp.app */,
+				52E9A2191B5505EB00033B32 /* AdoboAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52E9A2021B5505EB00033B32 /* AdoboApp */ = {
+			isa = PBXGroup;
+			children = (
+				52E9A2311B5506C100033B32 /* adobo-background.png */,
+				52E9A2321B5506C100033B32 /* adobo-pen.png */,
+				52E9A2331B5506C100033B32 /* Mohave-Bold.otf */,
+				52E9A2341B5506C100033B32 /* adobo-logo */,
+				52E9A2391B5506F800033B32 /* ViewController.h */,
+				52E9A23A1B5506F800033B32 /* ViewController.m */,
+				52E9A23B1B5506F800033B32 /* ViewController.xib */,
+				52E9A2071B5505EB00033B32 /* AppDelegate.h */,
+				52E9A2081B5505EB00033B32 /* AppDelegate.m */,
+				52E9A2101B5505EB00033B32 /* Images.xcassets */,
+				52E9A2121B5505EB00033B32 /* LaunchScreen.xib */,
+				528C59AE1B5631FF00AA18A1 /* PJRSignatureView.h */,
+				528C59AF1B5631FF00AA18A1 /* PJRSignatureView.m */,
+				52E9A2031B5505EB00033B32 /* Supporting Files */,
+			);
+			path = AdoboApp;
+			sourceTree = "<group>";
+		};
+		52E9A2031B5505EB00033B32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52E9A2041B5505EB00033B32 /* Info.plist */,
+				52E9A2051B5505EB00033B32 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52E9A21C1B5505EB00033B32 /* AdoboAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				52E9A21F1B5505EB00033B32 /* AdoboAppTests.m */,
+				52E9A21D1B5505EB00033B32 /* Supporting Files */,
+			);
+			path = AdoboAppTests;
+			sourceTree = "<group>";
+		};
+		52E9A21D1B5505EB00033B32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52E9A21E1B5505EB00033B32 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		913F2F511FE51D433524FCE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E65F48A3540B5E5AB060098E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52E9A1FF1B5505EB00033B32 /* AdoboApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E9A2231B5505EB00033B32 /* Build configuration list for PBXNativeTarget "AdoboApp" */;
+			buildPhases = (
+				24EE7667BAF24E67F967B1AB /* Check Pods Manifest.lock */,
+				52E9A1FC1B5505EB00033B32 /* Sources */,
+				52E9A1FD1B5505EB00033B32 /* Frameworks */,
+				52E9A1FE1B5505EB00033B32 /* Resources */,
+				F2A32633EAE527CB568343E7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdoboApp;
+			productName = AdoboApp;
+			productReference = 52E9A2001B5505EB00033B32 /* AdoboApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52E9A2181B5505EB00033B32 /* AdoboAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E9A2261B5505EB00033B32 /* Build configuration list for PBXNativeTarget "AdoboAppTests" */;
+			buildPhases = (
+				52E9A2151B5505EB00033B32 /* Sources */,
+				52E9A2161B5505EB00033B32 /* Frameworks */,
+				52E9A2171B5505EB00033B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52E9A21B1B5505EB00033B32 /* PBXTargetDependency */,
+			);
+			name = AdoboAppTests;
+			productName = AdoboAppTests;
+			productReference = 52E9A2191B5505EB00033B32 /* AdoboAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52E9A1F81B5505EB00033B32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = jumpdigital;
+				TargetAttributes = {
+					52E9A1FF1B5505EB00033B32 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					52E9A2181B5505EB00033B32 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 52E9A1FF1B5505EB00033B32;
+					};
+				};
+			};
+			buildConfigurationList = 52E9A1FB1B5505EB00033B32 /* Build configuration list for PBXProject "AdoboApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52E9A1F71B5505EB00033B32;
+			productRefGroup = 52E9A2011B5505EB00033B32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52E9A1FF1B5505EB00033B32 /* AdoboApp */,
+				52E9A2181B5505EB00033B32 /* AdoboAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52E9A1FE1B5505EB00033B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E9A23D1B5506F800033B32 /* ViewController.xib in Resources */,
+				52E9A2371B5506C100033B32 /* Mohave-Bold.otf in Resources */,
+				52E9A2141B5505EB00033B32 /* LaunchScreen.xib in Resources */,
+				52E9A2361B5506C100033B32 /* adobo-pen.png in Resources */,
+				52E9A2111B5505EB00033B32 /* Images.xcassets in Resources */,
+				52E9A2351B5506C100033B32 /* adobo-background.png in Resources */,
+				52E9A2381B5506C100033B32 /* adobo-logo in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E9A2171B5505EB00033B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24EE7667BAF24E67F967B1AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A32633EAE527CB568343E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52E9A1FC1B5505EB00033B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E9A23C1B5506F800033B32 /* ViewController.m in Sources */,
+				52E9A2091B5505EB00033B32 /* AppDelegate.m in Sources */,
+				528C59B01B5631FF00AA18A1 /* PJRSignatureView.m in Sources */,
+				52E9A2061B5505EB00033B32 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E9A2151B5505EB00033B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E9A2201B5505EB00033B32 /* AdoboAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52E9A21B1B5505EB00033B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52E9A1FF1B5505EB00033B32 /* AdoboApp */;
+			targetProxy = 52E9A21A1B5505EB00033B32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52E9A2121B5505EB00033B32 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E9A2131B5505EB00033B32 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52E9A2211B5505EB00033B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		52E9A2221B5505EB00033B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52E9A2241B5505EB00033B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B175BEE4861DF6EC8B41C805 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AdoboApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52E9A2251B5505EB00033B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821D0CAFFAF14CD6356C7C14 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AdoboApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52E9A2271B5505EB00033B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AdoboAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdoboApp.app/AdoboApp";
+			};
+			name = Debug;
+		};
+		52E9A2281B5505EB00033B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AdoboAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdoboApp.app/AdoboApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52E9A1FB1B5505EB00033B32 /* Build configuration list for PBXProject "AdoboApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E9A2211B5505EB00033B32 /* Debug */,
+				52E9A2221B5505EB00033B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E9A2231B5505EB00033B32 /* Build configuration list for PBXNativeTarget "AdoboApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E9A2241B5505EB00033B32 /* Debug */,
+				52E9A2251B5505EB00033B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E9A2261B5505EB00033B32 /* Build configuration list for PBXNativeTarget "AdoboAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E9A2271B5505EB00033B32 /* Debug */,
+				52E9A2281B5505EB00033B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52E9A1F81B5505EB00033B32 /* Project object */;
+}
