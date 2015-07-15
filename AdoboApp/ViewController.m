@@ -120,7 +120,8 @@
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://gift.jumpdigital.asia"]];
         //NSURL *filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
-        NSData *imageData = UIImagePNGRepresentation(compressedImg);
+        NSData *imageData = UIImageJPEGRepresentation(compressedImg, 0.9);
+        //NSData *imageData = UIImagePNGRepresentation(compressedImg);
         NSDictionary *param = @{@"name" : jsonName, @"age" : jsonAge, @"email" : jsonEmail, @"contact_number" : jsonNum};
         [manager POST:@"/adobo-signature-api/registrants"
            parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
