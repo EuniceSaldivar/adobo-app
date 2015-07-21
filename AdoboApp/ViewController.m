@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AFNetworking/AFNetworking.h>
+#import "AdoboClient.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     [self.navigationController setNavigationBarHidden:YES];
     //[self addLayerShadow];
     
@@ -33,6 +33,7 @@
 -(void)dismissKey {
     [self.view endEditing:YES];
 }
+
 /*
 -(void)addLayerShadow{
     
@@ -71,8 +72,8 @@
         compression -= 0.1;
         signatureData = UIImageJPEGRepresentation(img, compression);
     }
-    //NSLog(@"compressed img size: %lu",(unsigned long)[signatureData length]);
     UIImage * compressedImg = [UIImage imageWithData:signatureData];
+    //NSLog(@"compressed img size: %lu",(unsigned long)[signatureData length]);
     // UIImageWriteToSavedPhotosAlbum(compressedImg, self, nil, nil);
     
     
@@ -115,46 +116,32 @@
                                                                 message:@"Contact Number should have at least 11 digits." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
             [alertView show];
         }
+    
     else {
-        
-        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-        manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://gift.jumpdigital.asia"]];
-        //NSURL *filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
-        NSData *imageData = UIImageJPEGRepresentation(compressedImg, 0.9);
-        //NSData *imageData = UIImagePNGRepresentation(compressedImg);
+        AdoboClient *client = [AdoboClient sharedClient];
         NSDictionary *param = @{@"name" : jsonName, @"age" : jsonAge, @"email" : jsonEmail, @"contact_number" : jsonNum};
-        [manager POST:@"/adobo-signature-api/registrants"
-           parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-               //[formData appendPartWithFileURL:filePath name:@"image" error:nil];
-               [formData appendPartWithFileData:imageData name:@"signature" fileName:@"signature.jpg" mimeType:@"image/jpeg"];
+        NSData *imageData = UIImageJPEGRepresentation(compressedImg, 0.9);
+        [client postAdoboSupportWithParameters:param
+                                     imageData:imageData
+                                       success:^(NSURLSessionDataTask *task, id responseObject) {
+            NSLog(@"Success: %@", responseObject);
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success!"
+                                                                message:@"Thank you for supporting the #AdoboMovement." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alertView show];
+            self.name.text = @"";
+            self.age.text = @"";
+            self.email.text = @"";
+            self.num.text = @"";
+            [signatureView clearSignature];
             
-           }
-              success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                  NSLog(@"Success: %@", responseObject);
-     
-                  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success!"
-                                                                      message:@"Thank you for supporting the #AdoboMovement." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-                  [alertView show];
-                  self.name.text = @"";
-                  self.age.text = @"";
-                  self.email.text = @"";
-                  self.num.text = @"";
-                  [signatureView clearSignature];
-        
-              }
-              failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                  NSLog(@"Error: %@", error);
-                  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error!"
-                                                                      message:[NSString stringWithFormat:@"%@", [error localizedDescription]] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-                  [alertView show];
-              }
+        }
+                                       failure:^(NSURLSessionDataTask *task, NSError *error) {
+                                           NSLog(@"Error: %@", error);
+                                           UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error!" message:[NSString stringWithFormat:@"%@", [error localizedDescription]] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                                           [alertView show];
+                                       }
          ];
-        
-       
-    }
-    
-    
-    
+          }
 }
 
 

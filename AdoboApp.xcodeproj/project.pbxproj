@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		528C59B01B5631FF00AA18A1 /* PJRSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C59AF1B5631FF00AA18A1 /* PJRSignatureView.m */; };
+		52CAE8981B5E227B0048C0BD /* AdoboClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAE8971B5E227B0048C0BD /* AdoboClient.m */; };
 		52E9A2061B5505EB00033B32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A2051B5505EB00033B32 /* main.m */; };
 		52E9A2091B5505EB00033B32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A2081B5505EB00033B32 /* AppDelegate.m */; };
 		52E9A2111B5505EB00033B32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E9A2101B5505EB00033B32 /* Images.xcassets */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		528C59AE1B5631FF00AA18A1 /* PJRSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRSignatureView.h; sourceTree = "<group>"; };
 		528C59AF1B5631FF00AA18A1 /* PJRSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRSignatureView.m; sourceTree = "<group>"; };
+		52CAE8961B5E227B0048C0BD /* AdoboClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdoboClient.h; sourceTree = "<group>"; };
+		52CAE8971B5E227B0048C0BD /* AdoboClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdoboClient.m; sourceTree = "<group>"; };
 		52E9A2001B5505EB00033B32 /* AdoboApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoboApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E9A2041B5505EB00033B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52E9A2051B5505EB00033B32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				52E9A2391B5506F800033B32 /* ViewController.h */,
 				52E9A23A1B5506F800033B32 /* ViewController.m */,
 				52E9A23B1B5506F800033B32 /* ViewController.xib */,
+				52CAE8961B5E227B0048C0BD /* AdoboClient.h */,
+				52CAE8971B5E227B0048C0BD /* AdoboClient.m */,
 				52E9A2071B5505EB00033B32 /* AppDelegate.h */,
 				52E9A2081B5505EB00033B32 /* AppDelegate.m */,
 				52E9A2101B5505EB00033B32 /* Images.xcassets */,
@@ -303,6 +308,7 @@
 				52E9A2091B5505EB00033B32 /* AppDelegate.m in Sources */,
 				528C59B01B5631FF00AA18A1 /* PJRSignatureView.m in Sources */,
 				52E9A2061B5505EB00033B32 /* main.m in Sources */,
+				52CAE8981B5E227B0048C0BD /* AdoboClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
