@@ -37,7 +37,7 @@ NSString * const baseURLString = @"http://gift.jumpdigital.asia";
                              imageData:(NSData *)imageData
                                success:(void (^)(NSURLSessionDataTask *, id))success
                                failure:(void (^)(NSURLSessionDataTask *, NSError *error))failure{
-    NSString* path = [NSString stringWithFormat:@"%@/",
+    NSString* path = [NSString stringWithFormat:@"%@/adobo-signature-api/registrants",
                       baseURLString];
     [self POST:path parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData){
         [formData appendPartWithFileData:imageData name:@"signature" fileName:@"signature.jpg" mimeType:@"image/jpeg"];
